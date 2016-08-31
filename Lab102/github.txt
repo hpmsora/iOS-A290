@@ -1,0 +1,61 @@
+A Not-So-Brief Introduction to GitHub (and IU GitHub) *
+
+iOS App Dev - CSCI A290/A590 - Fall 2016
+
+Git basics
+
+Git is a software configuration management (SCM) version control system (VCS) that is widely used.
+[some external links: Git In Five Minutes | Everyday GIT With 20 Commands Or So | Practice with git commands]
+Terminology
+
+GitHub -- the hosting site, in our case IU GitHub, located at https://github.iu.edu/
+repo, repository -- a project database that stores the history and configuration of the project
+fork -- forking creates a new, unique repository from an existing one
+clone -- you make a copy (clone) of a remote repository in your local machine
+upstream -- after cloning a repository you often call that "original" repository "upstream".
+commit -- As a noun: A single point in the Git history; the entire history of a project is represented as a set of interrelated commits. The word "commit" is often used by Git in the same places other revision control systems use the words "revision" or "version". Also used as a short hand for commit object.
+As a verb: The action of storing a new snapshot of the project's state in the Git history, by creating a new commit representing the current state of the index and advancing HEAD to point at the new commit.
+push -- pushing from local repository to GitHub hosted remote repository
+pull request -- a method of submitting contributions to an open development project. A pull request occurs when a developer asks for changes committed to an external repository to be considered for inclusion in a project’s main repository
+Want to learn more? Look at the Git documentation, type the following at command line:
+git help glossary
+For A290/A590 iOS App Dev coursework, you will be in the role of a software developer, turning in your work to IU GitHub
+
+Before starting on any of this, open a plain-text editor on your STC lab machine.
+    (the excellent free TextWrangler editor should now be available on PH155 systems, and we suggest that you use it)
+ Take notes about how you proceed along all the following steps. You'll be submitting your own notes as part of today's lab, to verify that all works with your IU GitHub setup.
+
+You may also use TextEdit.app instead of TextWrangler (note: the default "text" file format for TextEdit on Mac OS X systems is "rich text" (.rtf) which isn't what we want here. We recommend the free TextWrangler program. If you don't want to install a new program, you can set TextEdit to save text files (.txt) as follows: Open "Preferences", go to the "Format" section and select "Plain Text". Quit TextEdit, then restart it. Now, you can save things as text files by choosing "Unicode (UTF-8)".)
+
+Go to Github.iu.edu, log in using your user name;
+If it is your first time to use IU GitHub, you are probably not yet on the organization we prepared for A290/A590 iOS App Dev, i.e. A290iOS-Fall2016; ask the AI or the Instructor to add you to the organization before you continue!
+Go to the organization web page — for example by using the URL https://github.iu.edu/organizations/A290iOS-Fall2016 to verify that you are allowed to access it. If you can see that page, it means that you are a member of the A290iOS-Fall2016 organization.
+Note: being a member of the A290iOS-Fall2016 organization will allow you to create your own repositories within that organization; it does not create a repository for you. You need to create a repository by yourself, within the A290iOS-Fall2016 organization, as in the following steps.
+Create a repository called A290iOS followed by your email ID (e.g., A290iOSusername, with a capital "A" initial, where username is your IU email ID, not the word "username") on IU GitHub, within the A290iOS-Fall2016 organization. Make sure that you select "Private" and click on "Initialize the repository with a README". Your repositiory needs to sit in the A290iOS-Fall2016 organization:
+
+Obtain the "HTTPs clone URL" i.e. the web address of your own repository on IU GitHub (which you will need in the subsequent steps) by selecting and copying it from the right side entry on your repository page:
+
+Now you need to decide how you want to use git: use the command line interface (the "traditional" way) (step 5 below) or using Xcode's git facilities if you feel brave (we may get to details about that at some next lecture/lab time).
+Use the git command line interface — here we're going to show you how to turn in your "lab101" work. The same procedure may be followed for other labs, lecture tasks, homework and assignments. Make sure that you substitute "lab101" with the appropriate folder name for what you want to submit, e.g. "lecture102", "hw101", "a101", etc.
+[some external help: basic unix/linux commands]
+You will use the following commands in the Mac Terminal.app (or on a linux/unix system such as silo.soic.indiana.edu). 
+(if you use a Windows machine, use PuTTY to connect to silo.soic.indiana.edu).
+Make a copy of the repository on your local machine:
+git clone https://username@github.iu.edu/A290iOS-Fall2016/A290iOSusername.git
+     (replacing 'username' with your IU username);
+You are now ready to make changes to your own local git repository copy, i.e.:
+on the system where you're testing this,
+place your own "lab notes" plain-text file
+into a new "lab101" subfolder that you create inside your A290iOSusername folder (your local repository copy).
+For that purpose, you may create the "lab101" subfolder from Terminal.app,
+and then open that subfolder from Terminal.app, so that it shows up in Finder thus:
+cd ~/A290iOSusername/
+mkdir lab101
+open .
+You are not done quite yet — you need to upload the changes to the IU GitHub server as follows, from Terminal.app:
+(while in your local git repository folder, e.g., after cding into it: cd ~/A290iOSusername/)
+git add .
+git commit -m "testing commit to IU GitHub for A290/A590 iOS App Dev" (or some other meaningful message)
+git push
+Now your changes should be propagated to your repository on IU GitHub; reload your browser page pointing to https://github.iu.edu/ to verify that your code project folder has been entirely** uploaded.
+**entirely, i.e. the project folder together with all its content: subfolders, source code files, etc.
