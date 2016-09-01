@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E0943CE01D778FFD00F00F5A"
+               BlueprintIdentifier = "E0108DDC1D77A3050046FF27"
                BuildableName = "FlashCards.app"
                BlueprintName = "FlashCards"
                ReferencedContainer = "container:FlashCards.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E0943CE01D778FFD00F00F5A"
+            BlueprintIdentifier = "E0108DDC1D77A3050046FF27"
             BuildableName = "FlashCards.app"
             BlueprintName = "FlashCards"
             ReferencedContainer = "container:FlashCards.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E0943CE01D778FFD00F00F5A"
+            BlueprintIdentifier = "E0108DDC1D77A3050046FF27"
             BuildableName = "FlashCards.app"
             BlueprintName = "FlashCards"
             ReferencedContainer = "container:FlashCards.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E0943CE01D778FFD00F00F5A"
+            BlueprintIdentifier = "E0108DDC1D77A3050046FF27"
             BuildableName = "FlashCards.app"
             BlueprintName = "FlashCards"
             ReferencedContainer = "container:FlashCards.xcodeproj">
