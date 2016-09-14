@@ -39,6 +39,14 @@
                                     <action selector="showQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Dr-To-MLT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoJ-Lw-0XF">
+                                <rect key="frame" x="20" y="336" width="560" height="70"/>
+                                <color key="backgroundColor" red="0.96640822047647013" green="1" blue="0.97500469907862475" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Show Answer"/>
+                                <connections>
+                                    <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YPe-sI-oia"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIh-Cd-01I">
                                 <rect key="frame" x="20" y="250" width="560" height="54"/>
                                 <color key="backgroundColor" red="1" green="0.92949859489838449" blue="0.73240264053043802" alpha="1" colorSpace="calibratedRGB"/>
@@ -49,14 +57,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoJ-Lw-0XF">
-                                <rect key="frame" x="20" y="336" width="560" height="70"/>
-                                <color key="backgroundColor" red="0.96640822047647013" green="1" blue="0.97500469907862475" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Show Answer"/>
-                                <connections>
-                                    <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YPe-sI-oia"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.95360498453325537" green="1" blue="0.89557157729261649" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>

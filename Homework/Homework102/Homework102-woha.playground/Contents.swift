@@ -1,10 +1,20 @@
 //: Playground - noun: a place where people can play
 
-//A
 import UIKit
 
-class HW03 {
-func switf_example() -> (String) {
+class HW102 {
+
+let x: Float
+let y: Float
+    var text: String
+    init(ax:Float, ay:Float) {
+        self.x = ax
+        self.y = ay
+        self.text = ""
+    }
+
+    //A
+    func switf_example() -> (String) {
     let glassesStatus = "new"
 
     switch glassesStatus {
@@ -24,6 +34,11 @@ func switf_example() -> (String) {
 func twoThings(x: Float, y: Float) -> (a:Float,b:Float) {
     return(x*y, x + y)
 }
+    
+    func twoThingsPrint() {
+        var result = twoThings(self.x, y: self.y)
+        print(result)
+    }
 
 //print(twoThings(1.00, y: 2.00))
 //(2.0, 3.0)
@@ -48,16 +63,15 @@ func fib(x:Int)->Array<Int>{
     
     return ls
 }
-
+}
 //print(fib(10))
 //[1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144]
 //print(fib(20))
 //[1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711]
 
 //D
-}
-class HW102: HW03{
-    
-    print(twoThing(23.01, 20.30))
-    
-}
+let twoThings1 = HW102(ax: 1.23, ay: 4.23)
+let twoThings2 = HW102(ax: 12.34, ay: 54.34)
+
+twoThings1.twoThingsPrint()
+twoThings2.twoThingsPrint()
