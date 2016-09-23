@@ -1,0 +1,4 @@
+iOS Project
+Picture comparing survey app.
+
+Client can upload the maximum 20 pictures in one set and the application publish the set. The application will make new activities that will compare two picture. The user does not need to register any kind of information and one can just double touch the screen that which picture is better. User, also, can exit the survey any time to press exit button. If the user presses the detail button on the main activities, it shows the statics and ranking to the set. Also the sets are shown with most popular sets first and it will be gone after 3 days after published.
