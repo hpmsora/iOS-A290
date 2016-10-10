@@ -1,0 +1,48 @@
+Assignment 101: Team & Repository Organization
+
+100 points
+Due
+
+Wednesday September 07 2016 at 11:59PM on IU GitHub.
+Work Policy
+
+For your Assignment 101, please work in 2-person teams within the A290 class. There can be at most 2 students per team. The team you choose for Assignment 101 will be considered stable for all the other assignments in this 8-week course. In general, you may discuss A290 assignments with other students, but you have to implement solutions within your team. Acknowledge any other student involved in the discussion. Do not share any source code or Interface Builder elements with students outside your team.
+Tasks
+
+There is no programming task &c. for Assignment 101 --- this assignment consists of only two organizational tasks:
+A290 Student Teams
+
+Starting from Assignment 101, we request that students form teams within the A290 class. Teams need to be formed by 2 (two) students per team*.
+*I realize that perhaps not everyone may be able to form a group of two, since there is an odd number of total students in A290. However, before any group of three students may be authorized, all other teams need to have formed.
+
+The team you choose will be considered stable for all the subsequent programming assignments and labs in this 8-week course.
+
+You may still discuss assignments with other students, but you have to solve and implement assignments & task solutions within your team. Always acknowledge in writing any other students involved in the discussion. You are not allowed to share any source code or algorithms, pseudocode, Interface Builder elements, etc. with students outside of your team.
+
+If you need to find a team partner, we suggest that you send a Canvas message to all A290 students, to check if any student still not in a team may wish to form a team. To send a message to all students in the class, in IU Canvas select "Inbox" in the left-side window toolbar, then click the "Compose a new message" icon at the top. Select "Course:CSCI A290...Fall 2016" → "To:" → then click on the person/contacts icon and select → "All in CSCI A290/A590 iOS App Dev I - Fall 2016", and include A290 in the Subject of your message.
+
+Q1: if we work in a team, how many different submissions do we have to turn in for each assignment? A different one each? Or just one for both team mebers?
+A1: each team is to work on just one team-based solution per team. Both team members need to turn in the same solution.
+
+Q2: what about the grade? What grade will we receive?
+A2: each student within a team will receive the same grade for every programming assignment and lab task that are submitted as team-based work.
+
+Q3: what if something goes wrong?
+A3: we'll provide you with a teamwork feedback form, to be submitted individually and privately (not on IU GitHub), with any comments or issues you may want to report about your team. These forms will be treated confidentially.
+
+Finally, if you wish, pick a nickname for your team. Teams without a nickname will be given a random color-based nickname, e.g. "Team Orange", "Team Purple", etc. 
+
+IU GitHub Repository Organization
+
+A290 assignments, homework, lab tasks, as well as the final project, are submitted to IU GitHub.  The following guidelines are to be followed by all students in A290 iOS App Dev I when turning in assignments and labs to IU GitHub: 
+
+Inside your repository, for every category of assignments create a subfolder i.e. "assignments", "labs", "homework", etc.
+
+Inside these subfolders, every submission should be contained within its own folder. These names should NOT be based on the name of the Xcode project, but rather the specific ID for that submission. e.g. "lab201", "assignment101" (or "a101" if you prefer), etc. Submissions that are not encased in a correctly named folder are difficult to find and will not be graded.
+
+All folders and files for lab tasks and homework that you already turned in to IU GitHub also have to be (re)organized the same way, i.e. do not leave any files/folder in your IU GitHub A290 repository outside of the file structure explained here.
+
+Your IU GitHub repository needs to be named thus:
+A290iOS directly followed by your email ID (e.g., A290iOSusername, with a capital "A" initial, where username is your IU email ID, not the word "username") -- no other characters, spaces or different letter capitalization.
+please make sure that you rename your repository, if it was named differently.
+(one good reason for such strict naming is that we use semi-automated scripts to download your IU GitHub submissions that expect the above naming - if your repository is named differently, it won't be found by the scripts and it won't be graded)
