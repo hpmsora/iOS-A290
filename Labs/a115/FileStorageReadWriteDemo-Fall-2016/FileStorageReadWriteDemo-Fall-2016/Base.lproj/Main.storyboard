@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XC0-FV-n8e">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="6dA-xL-VdN">
+            <objects>
+                <viewController id="XC0-FV-n8e" customClass="ViewController" customModule="FileStorageReadWriteDemo_Fall_2016" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oWk-Ed-FPv"/>
+                        <viewControllerLayoutGuide type="bottom" id="N84-Q4-Sky"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Msm-Q7-Sha">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJN-JO-geJ">
+                                <rect key="frame" x="16" y="28" width="568" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Get Documents Path">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonGetDocumentsPath:" destination="XC0-FV-n8e" eventType="touchUpInside" id="Vfp-0b-ffA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjs-ke-G19">
+                                <rect key="frame" x="16" y="66" width="568" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Get Documents URL">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonGetDocumentsURL:" destination="XC0-FV-n8e" eventType="touchUpInside" id="Meu-6Z-LK5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAY-4h-oO0">
+                                <rect key="frame" x="16" y="104" width="568" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Get (and Create) Application Support URL">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonGetAndCreateApplicationSupportURL:" destination="XC0-FV-n8e" eventType="touchUpInside" id="0nE-DJ-gZl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYS-6E-cTq">
+                                <rect key="frame" x="16" y="142" width="568" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Create Folder and Files">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonCreateFoldersAndFiles:" destination="XC0-FV-n8e" eventType="touchUpInside" id="fVO-tj-mhj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZe-Q0-hVL">
+                                <rect key="frame" x="16" y="180" width="568" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Get Contents of Directory">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonGetContentsOfDirectory:" destination="XC0-FV-n8e" eventType="touchUpInside" id="fel-ZH-zdF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57f-3E-bCH">
+                                <rect key="frame" x="16" y="218" width="568" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Deep Traversal of Directory">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonDeepTraversalOfDirectory:" destination="XC0-FV-n8e" eventType="touchUpInside" id="23a-d1-47A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Vf-RF-iMp">
+                                <rect key="frame" x="16" y="256" width="568" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Save one Person's Data">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonSaveOnePersonData:" destination="XC0-FV-n8e" eventType="touchUpInside" id="N0W-RU-Dse"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPj-lc-dk4">
+                                <rect key="frame" x="16" y="294" width="568" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Retrieve one Person's Data">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonRetrieveOnePersonData:" destination="XC0-FV-n8e" eventType="touchUpInside" id="Cvm-p0-vFS"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ej-gK-fsn">
+                                <rect key="frame" x="16" y="332" width="568" height="248"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Text Output from App:
+
+(scroll to see more)
+
+--------
+
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="mAY-4h-oO0" firstAttribute="trailing" secondItem="zYS-6E-cTq" secondAttribute="trailing" id="2kh-4S-eBV"/>
+                            <constraint firstItem="WJN-JO-geJ" firstAttribute="top" secondItem="oWk-Ed-FPv" secondAttribute="bottom" constant="8" symbolic="YES" id="4VR-8Q-6cZ"/>
+                            <constraint firstItem="GZe-Q0-hVL" firstAttribute="top" secondItem="zYS-6E-cTq" secondAttribute="bottom" constant="8" symbolic="YES" id="4jY-Cs-P5Z"/>
+                            <constraint firstItem="bPj-lc-dk4" firstAttribute="trailing" secondItem="3Ej-gK-fsn" secondAttribute="trailing" id="7wc-vI-Jgi"/>
+                            <constraint firstItem="WJN-JO-geJ" firstAttribute="centerX" secondItem="Msm-Q7-Sha" secondAttribute="centerX" id="A6z-1q-pcX"/>
+                            <constraint firstItem="zYS-6E-cTq" firstAttribute="leading" secondItem="GZe-Q0-hVL" secondAttribute="leading" id="AcC-S3-Th3"/>
+                            <constraint firstItem="57f-3E-bCH" firstAttribute="top" secondItem="GZe-Q0-hVL" secondAttribute="bottom" constant="8" symbolic="YES" id="CIV-ro-u7U"/>
+                            <constraint firstItem="3Vf-RF-iMp" firstAttribute="trailing" secondItem="bPj-lc-dk4" secondAttribute="trailing" id="Cdt-JL-367"/>
+                            <constraint firstItem="WJN-JO-geJ" firstAttribute="trailing" secondItem="fjs-ke-G19" secondAttribute="trailing" id="EQi-of-ivG"/>
+                            <constraint firstItem="fjs-ke-G19" firstAttribute="trailing" secondItem="mAY-4h-oO0" secondAttribute="trailing" id="H2k-Ud-3v5"/>
+                            <constraint firstItem="zYS-6E-cTq" firstAttribute="top" secondItem="mAY-4h-oO0" secondAttribute="bottom" constant="8" symbolic="YES" id="Ipd-cx-R0b"/>
+                            <constraint firstItem="GZe-Q0-hVL" firstAttribute="trailing" secondItem="57f-3E-bCH" secondAttribute="trailing" id="KmK-wD-7bu"/>
+                            <constraint firstItem="mAY-4h-oO0" firstAttribute="leading" secondItem="zYS-6E-cTq" secondAttribute="leading" id="MDH-5G-8QP"/>
+                            <constraint firstItem="57f-3E-bCH" firstAttribute="trailing" secondItem="3Vf-RF-iMp" secondAttribute="trailing" id="Nhy-dW-gxh"/>
+                            <constraint firstItem="bPj-lc-dk4" firstAttribute="top" secondItem="3Vf-RF-iMp" secondAttribute="bottom" constant="8" symbolic="YES" id="U8o-vb-GYR"/>
+                            <constraint firstItem="57f-3E-bCH" firstAttribute="leading" secondItem="3Vf-RF-iMp" secondAttribute="leading" id="UbD-P1-oI6"/>
+                            <constraint firstItem="mAY-4h-oO0" firstAttribute="top" secondItem="fjs-ke-G19" secondAttribute="bottom" constant="8" symbolic="YES" id="WIQ-Be-WqO"/>
+                            <constraint firstItem="3Vf-RF-iMp" firstAttribute="top" secondItem="57f-3E-bCH" secondAttribute="bottom" constant="8" symbolic="YES" id="XOo-MF-YlO"/>
+                            <constraint firstItem="fjs-ke-G19" firstAttribute="leading" secondItem="mAY-4h-oO0" secondAttribute="leading" id="arw-uW-utl"/>
+                            <constraint firstItem="bPj-lc-dk4" firstAttribute="leading" secondItem="3Ej-gK-fsn" secondAttribute="leading" id="e6z-Ba-Vjo"/>
+                            <constraint firstItem="GZe-Q0-hVL" firstAttribute="leading" secondItem="57f-3E-bCH" secondAttribute="leading" id="fg6-IS-o2i"/>
+                            <constraint firstItem="zYS-6E-cTq" firstAttribute="trailing" secondItem="GZe-Q0-hVL" secondAttribute="trailing" id="g2G-PF-kM9"/>
+                            <constraint firstItem="WJN-JO-geJ" firstAttribute="leading" secondItem="fjs-ke-G19" secondAttribute="leading" id="g5V-Pr-CDS"/>
+                            <constraint firstItem="3Vf-RF-iMp" firstAttribute="leading" secondItem="bPj-lc-dk4" secondAttribute="leading" id="qPb-Nm-1sd"/>
+                            <constraint firstItem="WJN-JO-geJ" firstAttribute="leading" secondItem="Msm-Q7-Sha" secondAttribute="leadingMargin" constant="-4" id="uIn-jg-nSU"/>
+                            <constraint firstItem="3Ej-gK-fsn" firstAttribute="top" secondItem="bPj-lc-dk4" secondAttribute="bottom" constant="8" symbolic="YES" id="vRN-Wa-vBM"/>
+                            <constraint firstAttribute="bottom" secondItem="3Ej-gK-fsn" secondAttribute="bottom" constant="20" symbolic="YES" id="wBL-q0-qvt"/>
+                            <constraint firstItem="fjs-ke-G19" firstAttribute="top" secondItem="WJN-JO-geJ" secondAttribute="bottom" constant="8" symbolic="YES" id="wSh-SO-fyv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textViewOutput" destination="3Ej-gK-fsn" id="8pA-sg-oI5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TyJ-l0-Bsl" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="429"/>
+        </scene>
+    </scenes>
+</document>

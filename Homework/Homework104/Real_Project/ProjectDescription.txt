@@ -1,0 +1,23 @@
+Homework 103
+
+Erik Bailey
+
+First Eight Weeks Final Project Description
+
+My idea for my final project is an app that replicates a
+popular game called Cookie Clicker and it's million clones.
+
+For the description of the final project, I'll say the item
+that is being collected is cookies.
+
+The user starts out with a cooke score of one.  As the tap the screen,
+the cookie score goes up by one.  Eventually the user is able to access
+an "Upgrades" menu on a second tab.  Here the user is able to spend
+their cookies for upgrades which will automatically add to the score count
+every set number of seconds.  For this project, I will only incorporate
+the first few upgrades are so.
+
+The project will run on two major factors: input from the user and score
+added based on the number of upgrades own vs time.  Time will obviously
+be a major variable in this game.
+
