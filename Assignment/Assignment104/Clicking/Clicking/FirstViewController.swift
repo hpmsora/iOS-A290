@@ -101,6 +101,15 @@ class FirstViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        let stringKey = NSUserDefaults.standardUserDefaults()
+        
+        let addingNumNS = stringKey.stringForKey("savedAddingNum")
+        if addingNumNS != nil {
+            addingNum = Int(addingNumNS!)!
+        } else {
+            addingNum = 1
+        }
+
         // Dispose of any resources that can be recreated.
     }
 
